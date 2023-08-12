@@ -1,19 +1,7 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
-        Board board = new Board();
-        MGame mGame = new MGame();
-        Player player1 = new Player();
-        Player player2 = new Player();
-        Player player3 = new Player();
-        ArrayList<Player> players = new ArrayList<>();
-        players.add(player1);
-        players.add(player2);
-        players.add(player3);
-        mGame.playGame(players);
+        MGame game = new MGame(4, 40, 10); // Creating a game with 4 players, a board of size 40, and 10 rounds
+        game.playGame();
     }
 }
